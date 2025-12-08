@@ -1,16 +1,19 @@
 class Solution {
     public int differenceOfSum(int[] nums) {
-      int sum=0;
-      int digitSum=0;
-      for(int i=0;i<nums.length;i++){
-        sum=sum+nums[i];
-
-        int temp= nums[i];
-            while(temp>0){
-                digitSum=digitSum + temp%10;
-               temp/=10;
+       int sum=0;
+       int digit=0;
+        for(int x:nums){
+            sum=sum+x;
+            int num=x;
+            if(num>9){
+            while(num>0){
+               digit=digit+num%10;
+               num/=10;
             }
-      }  
-      return Math.abs(sum-digitSum);
+        }
+        else
+            digit=digit+x;
+        }
+        return (sum>digit)?(sum-digit):(digit-sum);
     }
 }
