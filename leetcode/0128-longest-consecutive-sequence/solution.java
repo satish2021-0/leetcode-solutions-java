@@ -19,7 +19,7 @@ class Solution {
                     count++;
                 }
                 
-                longest = Math.max(longest, count);
+              longest= longest>count?longest:count;
             }
         }
 
