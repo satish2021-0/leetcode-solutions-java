@@ -1,6 +1,6 @@
-import java.util.NoSuchElementException;
+import java.util.*;
 class Solution {
-    public int[] twoSum(int[] nums, int target) {
+    public int[] twoSum(int[] nums, int target) throws NoSuchElementFoundException {
 
        Map<Integer, Integer> m1 = new HashMap<>();
 
@@ -16,6 +16,13 @@ class Solution {
         m1.put(nums[i],i);
 
        }
-       throw new NoSuchElementException("Element is not present");
+       throw new NoSuchElementFoundException("Element is not present");
+    }
+}
+
+class NoSuchElementFoundException extends RuntimeException {
+
+    public NoSuchElementFoundException(String message) {
+        super(message);
     }
 }
