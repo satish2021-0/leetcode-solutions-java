@@ -18,7 +18,7 @@ Solutions are **automatically synced** from my LeetCode account using **GitHub A
 
 ## LeetCode Profile
  https://leetcode.com/<satish2021-0>/
-(https://leetcard.jacoblin.cool/satish2021-0?theme=dark&font=baloo&ext=heatmap)
+![LeetCode Stats](https://leetcard.jacoblin.cool/satish2021-0?theme=dark&font=baloo&ext=heatmap)
 
 
 
