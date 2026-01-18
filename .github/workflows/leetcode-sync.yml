@@ -13,7 +13,8 @@ jobs:
       - name: Sync LeetCode Solutions
         uses: joshcai/leetcode-sync@v1.7
         with:
-          username: ${{ secrets.LEETCODE_USERNAME }}
-          session: ${{ secrets.LEETCODE_SESSION }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          language: java
+          leetcode-session: ${{ secrets.LEETCODE_SESSION }}
+          leetcode-csrf-token: ""
+          destination-folder: "leetcode"
+          verbose: true
