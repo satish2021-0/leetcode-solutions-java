@@ -17,4 +17,5 @@ jobs:
           leetcode-session: ${{ secrets.LEETCODE_SESSION }}
           leetcode-csrf-token: ""
           destination-folder: "leetcode"
+          filter-duplicate-secs: true
           verbose: true
