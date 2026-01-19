@@ -27,13 +27,13 @@ public class Solution {
             slow=slow.next;
             fast=fast.next.next;
             if(fast==slow){
-                ListNode p1= fast; // also take fast kyuki fast==slow
+                ListNode p1= slow; // also take fast kyuki fast==slow
                 ListNode p2= head;
                 while(p1!=p2){
                     p1=p1.next;
                     p2=p2.next;
                 }
-               return p2; // also return p2 because at this point p1=p2
+               return p1; // also return p2 because at this point p1=p2
             }
         }
         return null;
