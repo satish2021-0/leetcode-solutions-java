@@ -33,7 +33,7 @@ public class Solution {
                     p1=p1.next;
                     p2=p2.next;
                 }
-               return p1; // also return p2 because at this point p1=p2
+               return p2; // also return p2 because at this point p1=p2
             }
         }
         return null;
